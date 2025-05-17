@@ -1,0 +1,337 @@
+
+
+
+
+.typing-container{
+  min-height: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+.intro-text{
+  flex: 1;
+  /* padding-right: 30px; */
+  padding-left: 90px;
+}
+
+.intro-text h1{
+  font-size: 35px;
+  margin: 5px 0px 10px 0px;
+  font-weight: bold;
+  color: white;
+}
+
+.intro-text p{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px 0px;
+  /* line-height: 1.4; */
+}
+
+.high{
+  color: #68c0ff;
+}
+.high2{
+  color: #ffffff;
+}
+
+.intro-photo{
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 250px;
+  box-shadow: 0 0 30px 10px #8a9bfd7c;
+}
+
+.intro-photo img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+
+.typed-text{
+  font-size: 20px;
+  margin: 5px 0 9px 0px;
+  font-weight: bold;
+  color: white;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  animation: blink 0.7s infinite;
+  font-family: monospace;
+}
+
+@keyframes blink{
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+/* css halaman About */
+
+
+
+
+
+.about-line{
+  flex: 1;
+  height: 2px;
+  background-color: #68c0ff;
+}
+
+.about-image img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-left: 125px;
+  margin-top: 45px;
+}
+
+.about-text{
+  flex: 1;
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  
+}
+
+
+
+.about-title-wraper{
+  margin-bottom: 20px;
+}
+
+.about-title{
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.about-container{
+  background: #202022;
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+  color: white;
+  font-weight: bold;
+  gap: 16px;
+  align-items: center;
+}
+
+.skill-container{
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 40px 40px 1px;
+}
+
+.skill-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.role-container{
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: white;
+  cursor: pointer;
+}
+
+.flipper{
+  position: relative;
+  width: 200%;
+  height: 100%;
+  transition: 1s ease-in-out;
+  display: flex;
+  /* border-radius: 10px; */
+  background-color: #171718;
+  overflow: hidden;
+}
+
+
+.flipper::before,
+.flipper::after {
+  content: 'Web Developer';
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 32, 34);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.flipper::before{
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.flipper::after {
+  content: 'Cyber Security';
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container-skill{
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+  color: white;
+  font-weight: bold;
+  gap: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.line-skill{
+  height: 2px;
+  width: 50px;
+  background-color: #68c0ff;
+}
+
+.skill-tab-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1px 40px 40px 40px;
+
+}
+
+.tab-button{
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.tab-button button{
+  padding: 8px 16px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #171718;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  ;
+}
+
+.tab-panel{
+  display: none;
+}
+
+.tab-panel.active{
+  display: block;
+}
+
+.skill-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+
+
+
+/* Warna berdasarkan teknologi */
+.skill-box i.fa-html5 {
+  color: #e34c26;
+}
+.skill-box i.fa-css3-alt {
+  color: #264de4;
+}
+.skill-box i.fa-js {
+  color: #f0db4f;
+}
+.skill-box i.fa-laravel {
+  color: #f9322c;
+}
+.skill-box i.fa-bootstrap {
+  color: #7952b3;
+}
+.skill-box i.fa-vuejs {
+  color: #42b883;
+}
+.skill-box i.fa-vscode {
+  color: #007acc;
+}
+.skill-box i.fa-github {
+  color: #ffffff;
+}
+.skill-box i.fa-terminal {
+  color: #00ffcc;
+}
+.skill-box i.fa-linux {
+  color: #ffffff;
+}
+.skill-box i.fa-network-wired {
+  color: #17a2b8;
+}
+
+.skill-box i.fa-php {
+  color: #777bb4; /* Warna resmi PHP */
+}
+
+.skill-box i.fa-server { color: #fb7a24; } /* warna oranye khas XAMPP */
+
+
+
+
+.porto-item {
+  background-color: #202022;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 10px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.porto-item:hover {
+  /* transform: scale(1.05); */
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
+  transform: scale(1.02) ;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+.porto-item img {
+  width:100%;
+  border-radius: 8px;
+}
+
+.container-portofolio{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
